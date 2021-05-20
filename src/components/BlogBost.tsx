@@ -42,10 +42,10 @@ export default class BlogPostView extends React.Component<Props, State> {
 
     return (
       <div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <img src={img} alt={title} />
         <p>
-          {text} &mdash; {author}
+          {text} &mdash; <strong>{author}</strong>
         </p>
       </div>
     );

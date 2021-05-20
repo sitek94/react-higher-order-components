@@ -4,12 +4,21 @@ import CommentList from './components/CommentList';
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <button onClick={() => api.start()}>Start API</button>
-      <button onClick={() => api.stop()}>Stop API</button>
-      <CommentList />
-      <BlogPostView id={api.getRandomBlogPostId()} />
+    <div>
+      <header>
+        <h1>Hello Higher-Order Components</h1>
+        <button onClick={() => api.start()}>Start API</button>
+        <button onClick={() => api.stop()}>Stop API</button>
+      </header>
+      <main>
+        <BlogPostView id={api.getRandomBlogPostId()} />
+        <CommentList />
+      </main>
+      <footer>
+        <a href="https://reactjs.org/docs/higher-order-components.html">
+          React: Higher-Order Components
+        </a>
+      </footer>
     </div>
   );
 }
