@@ -1,10 +1,17 @@
 import FakeApi from './fake-api';
-import { createBlogPost } from './faker';
+import { createComment, createBlogPost } from './faker';
 
-export const initialBlogPosts = Array(10)
+const initialCommentsCount = 10;
+const initialBlogPostsCount = 10;
+
+const initialComments = Array(initialCommentsCount)
+  .fill(null)
+  .map(() => createComment());
+
+const initialBlogPosts = Array(initialBlogPostsCount)
   .fill(null)
   .map(() => createBlogPost());
 
-const api = new FakeApi(initialBlogPosts);
+const api = new FakeApi(initialBlogPosts, initialComments);
 
 export default api;
