@@ -1,7 +1,7 @@
 import FakeApi from './fake-api';
 import { createComment, createBlogPost } from './faker';
 
-const initialCommentsCount = 10;
+const initialCommentsCount = 5;
 const initialBlogPostsCount = 10;
 
 const initialComments = Array(initialCommentsCount)

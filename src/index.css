@@ -17,6 +17,7 @@ main {
 
 main > div {
   padding: 25px;
+  flex: 1;
 }
 
 footer {
@@ -25,6 +26,10 @@ footer {
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 a {
